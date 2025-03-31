@@ -13,6 +13,7 @@
 }
 
 body {
+    min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -22,9 +23,10 @@ header {
 }
 
 header h1 {
-    font: normal 3em var(--font-title);
+    font: normal 8vw var(--font-title);
+    font-variant: small-caps;
     text-align: center;
-    padding: 50px 0px 5px 0px;
+    padding-top: 50px;
 }
 
 header p {
@@ -38,17 +40,20 @@ a {
     font-weight: bold;
 }
 
-header a:hover {
+a:hover {
     text-decoration: underline;
 }
 
-.sections {
-    padding: 80px 0px 80px 50px;
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 5vh;
 }
 
-.sections p {
-    font: normal 1.2em var(--font-strophe);
-    padding-bottom: 20px;
+section p {
+    font: normal 3.5vw var(--font-strophe);
+    line-height: 2em;
+    padding-bottom: 2em;
 }
 
 #background1 {
@@ -57,6 +62,10 @@ header a:hover {
 
 #background2 {
     background: wheat url('images/background002.jpg') center center / cover fixed;
+}
+
+.with-background {
+    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .with-background p {
